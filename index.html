@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fake Stor API</title>
+    </head>
+    <style>
+        body{
+            background-color: #ccc;
+        }
+        .popUpModel{
+            width: 40%;
+            height: 90vh;
+            margin: 3% auto;
+            margin-bottom: 100px;
+            padding: 0px 15px;
+            border-radius: 10%;
+            background-color: #fff;
+            box-shadow: 0 0 10px #0f0f0f;
+            overflow: hidden;
+        }
+
+        .rowCenterData{
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .popUpTitle{
+            text-align: center;
+            margin-top: 20px;
+            padding: 5px 0;
+            font-size: 22px;
+            background-color: rgb(151, 8, 115);
+            color: #f0f0f0;
+            border-radius: 0;
+            border-radius: 22px;
+        }
+
+        .productData{
+            height: 80%;
+            overflow-x: hidden;
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        .productProfilePic{
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .productProfilePic img{
+            width: 150px;
+            height: 150px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px #0f0f0f;
+        }
+
+        .productInfo{
+            font-size: 17px;
+            justify-content: center;
+            text-align: center;
+            overflow-y: auto;
+        }
+
+        .ProductIDDisplay{
+            font-size: 20px;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+
+        .viewproductDataLabel{
+            font-size: 18px;
+            font-weight: 600;
+            text-align: end;
+        }
+
+        .viewproductData_Data{
+            width: 300px;
+            overflow-x: hidden;
+            text-align: start;
+        }
+
+        .viewNextBtn{
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .viewNextBtn button{
+            padding: 5px 20px;
+            text-align: center;
+            border-radius: 8px;
+            outline: none;
+            border: 2px solid;
+            color: #f0f0f0;
+            font-weight: 700;
+            box-shadow: 0 0 3px #0829be;
+            background: rgba(0,212,255,1);
+            background: linear-gradient(rgba(0,212,255,1) 60%, rgba(9,9,121,1) 85%,  rgba(2,0,36,1) 100%, );
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        td {
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+        }
+
+    </style>
+    <body>
+        <div class="rowCenterData">
+            <div class="popUpModel">
+                <div class="row justify-content-center">
+                    <div class="popUpTitle">
+                        View Product
+                    </div>
+                </div>
+                <div class="productData">
+                    <div class="rowCenterData">
+                        <div class="productProfilePic">
+                            <img id="viewproductPic" src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg" alt="product pic">
+                        </div>
+                    </div>
+                    <div class="rowCenterData">
+                        <div class="productInfo">
+                            <div class="ProductIDDisplay">
+                                <span id="viewproductId">1</span>
+                            </div>
+                            <table class="popUpTableData center">
+                                <tr>
+                                    <td class="viewproductDataLabel">Title:</td>
+                                    <td><span class="viewproductData_Data" id="viewproductTitle">Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="viewproductDataLabel">Price:</td>
+                                    <td><span class="viewproductData_Data" id="viewproductPrice">109.95</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="viewproductDataLabel">Description:</td>
+                                    <td><span class="viewproductData_Data" id="viewproductDescription">Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="viewproductDataLabel">Category:</td>
+                                    <td><span class="viewproductData_Data" id="viewproductCategory">men's clothing</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="viewproductDataLabel">rating:</td>
+                                    <td><span class="viewproductData_Data" id="viewproductRating">3.9</span></td>
+                                </tr>
+                                <tr>
+                                    <td class="viewproductDataLabel">Sell:</td>
+                                    <td><span class="viewproductData_Data" id="viewproductSell">1200</span></td>
+                                </tr>
+                            </table>   
+                        </div>
+                    </div>
+                </div>
+                <div class="rowCenterData">
+                    <div id="viewNextBtn" class="viewNextBtn">
+                        <button>Next</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
